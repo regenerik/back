@@ -4,10 +4,6 @@ const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const routes = require('./routes/index.js');
 const { CORS_URL } = process.env;
-CORS_URL = {
-  origin: "https://bluggy-dollar.vercel.app/",
-  methods: [ "GET", "POST" ]
-}
 
 require('./db.js');
 
