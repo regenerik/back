@@ -1,6 +1,8 @@
 const { Router } = require('express');
 const router = Router();
-
+const cors = require('cors')
+router.use(cors())
+app.use(cors())
 
 // Importando los routers;
 const quotes = require("./quotesRoute");
